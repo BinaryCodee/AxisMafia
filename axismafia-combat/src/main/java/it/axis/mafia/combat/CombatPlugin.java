@@ -33,7 +33,7 @@ public class CombatPlugin extends JavaPlugin implements Listener {
     @EventHandler
     public void onQuit(PlayerQuitEvent event) {
         if (combatManager.isInCombat(event.getPlayer())) {
-            event.getPlayer().setHealth(0); // Kill on combat log
+            event.getPlayer().setHealth(0);
             Bukkit.broadcastMessage("§c" + event.getPlayer().getName() + " è uscito in combattimento!");
         }
     }

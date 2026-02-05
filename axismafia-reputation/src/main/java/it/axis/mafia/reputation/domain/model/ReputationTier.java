@@ -19,6 +19,6 @@ public enum ReputationTier {
             if (val >= tier.threshold)
                 return tier;
         }
-        return WANTED; // Default lowest if not captured by ordered iteration logic
+        return WANTED;
     }
 }

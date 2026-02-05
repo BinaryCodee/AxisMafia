@@ -27,7 +27,7 @@ public class SpawnCommand implements CommandExecutor {
 
         if (label.equalsIgnoreCase("spawn")) {
             Location spawn = player.getWorld().getSpawnLocation();
-            // Add countdown logic here later
+
             player.teleport(spawn);
             MessageUtils.send(player, "&aTeleportato allo spawn!");
             return true;

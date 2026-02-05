@@ -16,12 +16,12 @@ public class EconomyManager extends AbstractManager implements EconomyService {
 
     @Override
     public void onEnable() {
-        // Load from DB
+
     }
 
     @Override
     public void onDisable() {
-        // Save to DB
+
     }
 
     @Override

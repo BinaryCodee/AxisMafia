@@ -20,13 +20,13 @@ public class PlayerManager {
         repository.findById(uuid).thenAccept(opt -> {
             if (opt.isPresent()) {
                 sessionCache.put(uuid, opt.get());
-                // Update name if changed
+
                 if (!opt.get().getName().equals(name)) {
                     opt.get().setName(name);
                     savePlayer(opt.get());
                 }
             } else {
-                // First join
+
                 PlayerData newData = new PlayerData(uuid, name);
                 sessionCache.put(uuid, newData);
                 repository.save(newData);

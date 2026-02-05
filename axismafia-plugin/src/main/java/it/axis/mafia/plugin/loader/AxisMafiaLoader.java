@@ -13,7 +13,7 @@ public class AxisMafiaLoader {
 
     public void load() {
         plugin.getLogger().info("Initializing Enterprise Loader...");
-        // In a real scenario, this would scan for implementations
+
         ServiceRegistry.register(JavaPlugin.class, plugin);
     }
 }

@@ -14,8 +14,6 @@ public class AxisMafiaCorePlugin extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-        // Wait for Storage to load (in a real scenario, use depend in plugin.yml or
-        // service manager)
         if (StoragePlugin.getInstance() == null) {
             getLogger().severe("StoragePlugin not found! Disabling Core.");
             getServer().getPluginManager().disablePlugin(this);

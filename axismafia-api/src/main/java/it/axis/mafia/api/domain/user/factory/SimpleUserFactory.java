@@ -9,7 +9,7 @@ import it.axis.mafia.api.domain.user.model.UserStatisticsImpl;
 public class SimpleUserFactory {
 
     public User createUser(UserId id, UserName name) {
-        // Concrete implementation logic here (simplified for interface demo)
+
         return null;
     }
 }

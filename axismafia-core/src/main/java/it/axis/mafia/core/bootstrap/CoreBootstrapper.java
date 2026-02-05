@@ -13,7 +13,7 @@ public class CoreBootstrapper implements Bootstrapper {
     @Override
     public void bootstrap() {
         logger.info("Bootstrapping Core Enterprise Systems...");
-        // Complex initialization logic here
+
     }
 
     @Override

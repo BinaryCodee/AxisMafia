@@ -35,10 +35,6 @@ public class MafiaServiceImpl implements MafiaService {
         if (mafia == null)
             return;
 
-        // Logic to kick all members would go here (update PlayerData)
-        // Since PlayerData update is dependent on Core/Other services, we assume event
-        // listeners handle complex detachment
-
         mafiaManager.deleteMafia(name);
     }
 
@@ -52,7 +48,7 @@ public class MafiaServiceImpl implements MafiaService {
         player.setMafiaName(mafiaName);
 
         mafiaManager.save(mafia);
-        // PlayerData save happens in Core's PlayerManager separately or via event
+
     }
 
     @Override
@@ -83,7 +79,7 @@ public class MafiaServiceImpl implements MafiaService {
 
     @Override
     public void demoteMember(String mafiaName, PlayerData player) {
-        // Logic similar to promote but backwards
+
     }
 
     @Override

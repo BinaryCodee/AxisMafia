@@ -14,13 +14,12 @@ public class RapinaService {
 
     public boolean canRob(PlayerData robber, PlayerData victim) {
         if (robber.getMafiaName() == null)
-            return false; // Must be in Mafia
+            return false;
         if (robber.getGlobalLevel() < MIN_LEVEL)
-            return false; // Level check
+            return false;
         if (robber.getDailyRobberyCount() >= MAX_DAILY)
-            return false; // Daily limit
+            return false;
 
-        // Reset daily logic should be in task/login, simpler check here:
         if (System.currentTimeMillis() - robber.getLastDailyReset() > 86400000) {
             robber.setDailyRobberyCount(0);
             robber.setLastDailyReset(System.currentTimeMillis());
@@ -30,17 +29,15 @@ public class RapinaService {
     }
 
     public void startRobbery(Player attacker, Player victim, PlayerData attackerData) {
-        // Freeze victim
-        victim.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 200, 255)); // 10s stop
+
+        victim.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 200, 255));
         victim.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 60, 1));
 
-        // Notify
         TitleUtils.sendTitle(victim, "&cRAPINA IN CORSO!", "&7Non puoi muoverti per 10 secondi!");
         TitleUtils.sendTitle(attacker, "&aRAPINA INIZIATA", "&7Hai 10 secondi per rubare tutto!");
 
         attacker.openInventory(victim.getInventory());
 
-        // Update stats
         attackerData.setDailyRobberyCount(attackerData.getDailyRobberyCount() + 1);
         attackerData.setLastRobberyTime(System.currentTimeMillis());
     }

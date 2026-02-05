@@ -26,6 +26,6 @@ public class ScoreboardManager extends AbstractManager {
     }
 
     private void update(Player p) {
-        // Scoreboard update logic
+
     }
 }

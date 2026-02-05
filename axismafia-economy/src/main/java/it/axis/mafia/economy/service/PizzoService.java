@@ -20,7 +20,6 @@ public class PizzoService {
         if (!canCollectPizzo(player))
             return;
 
-        // Default pizzo calc (can be dynamic based on mafia level/territories)
         double amount = 1000.0;
 
         player.getEconomyData().setBalance(player.getEconomyData().getBalance() + amount);

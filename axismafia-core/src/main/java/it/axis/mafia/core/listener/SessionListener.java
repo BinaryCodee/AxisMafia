@@ -18,8 +18,7 @@ public class SessionListener implements Listener {
 
     @EventHandler
     public void onAsyncLogin(AsyncPlayerPreLoginEvent event) {
-        // Pre-load logic could go here, but for simplicity we load on Join or use a
-        // separate AsyncLogin logic
+
     }
 
     @EventHandler

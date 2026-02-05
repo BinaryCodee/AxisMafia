@@ -24,19 +24,18 @@ public class MafiaCreateCommandExecutor implements CommandExecutor, CreateMafiaO
         if (args.length < 2)
             return false;
 
-        CreateMafiaUseCaseImpl useCase = new CreateMafiaUseCaseImpl(manager, this); // In prod, inject singleton
+        CreateMafiaUseCaseImpl useCase = new CreateMafiaUseCaseImpl(manager, this);
         useCase.execute(new CreateMafiaCommand(args[0], args[1], ((Player) sender).getUniqueId().toString()));
         return true;
     }
 
     @Override
     public void presentSuccess(String mafiaName) {
-        // Send message to player (context missing here in simple port, usually passed
-        // in DTO or ThreadLocal)
+
     }
 
     @Override
     public void presentError(String error) {
-        // Send error
+
     }
 }

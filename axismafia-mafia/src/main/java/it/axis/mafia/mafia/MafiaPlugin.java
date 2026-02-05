@@ -27,7 +27,6 @@ public class MafiaPlugin extends JavaPlugin {
         this.rankManager = new RankManager();
         this.mafiaService = new MafiaServiceImpl(mafiaManager, rankManager);
 
-        // Load data
         mafiaManager.loadAll().thenRun(() -> {
             getLogger().info("Mafias loaded.");
         });

@@ -18,7 +18,7 @@ public class SqliteMafiaRepository implements MafiaRepository {
 
     @Override
     public CompletableFuture<Void> save(MafiaData value) {
-        // Implementation of save logic using PreparedStatement
+
         return CompletableFuture.completedFuture(null);
     }
 

@@ -7,6 +7,6 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 public class GUIListener implements Listener {
     @EventHandler
     public void onClick(InventoryClickEvent event) {
-        // GUI handling
+
     }
 }

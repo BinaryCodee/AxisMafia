@@ -17,7 +17,6 @@ public class ScoreboardPlugin extends JavaPlugin implements Listener {
         this.scoreboardManager = new ScoreboardManager();
         getServer().getPluginManager().registerEvents(this, this);
 
-        // Update task (20 ticks = 1s)
         getServer().getScheduler().runTaskTimerAsynchronously(this, () -> {
             scoreboardManager.updateAll();
         }, 20L, 20L);
