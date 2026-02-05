@@ -17,7 +17,7 @@ public class ConnectionFactory {
         HikariConfig config = new HikariConfig();
         config.setJdbcUrl("jdbc:sqlite:" + dbFile.getAbsolutePath());
         config.setPoolName("AxisMafia-Enterprise-Pool");
-        config.setMaximumPoolSize(20); // Scaled up
+        config.setMaximumPoolSize(20);
         config.setConnectionTimeout(30000);
 
         this.dataSource = new HikariDataSource(config);

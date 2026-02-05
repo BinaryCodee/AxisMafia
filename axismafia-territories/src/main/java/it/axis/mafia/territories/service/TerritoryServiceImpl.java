@@ -32,8 +32,7 @@ public class TerritoryServiceImpl implements TerritoryService {
 
     @Override
     public TerritoryData getTerritoryAt(String world, int x, int z) {
-        // Simple logic: iterate all territories and check bounds
-        // In prod, use spatial hashing or chunk map
+
         return manager.getAll().stream()
                 .filter(t -> t.getWorldName().equals(world))
                 .filter(t -> x >= t.getMinX() && x <= t.getMaxX() && z >= t.getMinZ() && z <= t.getMaxZ())

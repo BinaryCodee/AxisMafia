@@ -41,12 +41,12 @@ public class StaffManager extends AbstractManager {
     public void toggleStaffMode(Player player) {
         if (staffMode.contains(player.getUniqueId())) {
             staffMode.remove(player.getUniqueId());
-            player.getInventory().clear(); // Restore inventory logic needed here
+            player.getInventory().clear();
             player.sendMessage("§aStaff mode disabled");
         } else {
             staffMode.add(player.getUniqueId());
             player.getInventory().clear();
-            // Give tools
+
             player.sendMessage("§aStaff mode enabled");
         }
     }

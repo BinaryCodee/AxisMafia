@@ -17,8 +17,6 @@ import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 
-// Using simplistic JSON handling for map fields for this example.
-// In a real prod environment, use Gson/Jackson to serialize/deserialize maps.
 public class PlayerRepositoryImpl implements PlayerRepository {
 
     private final DatabaseManager db;
@@ -45,9 +43,9 @@ public class PlayerRepositoryImpl implements PlayerRepository {
                 ps.setDouble(5, data.getGlobalXp());
                 ps.setInt(6, data.getKills());
                 ps.setInt(7, data.getDeaths());
-                // Flattening EconomyData
+
                 ps.setDouble(8, data.getEconomyData().getBalance());
-                // Flattening ReputationData
+
                 ps.setString(9, data.getReputationData().getType().name());
                 ps.setInt(10, data.getReputationData().getPoints());
 
@@ -56,8 +54,6 @@ public class PlayerRepositoryImpl implements PlayerRepository {
                 ps.setLong(13, data.getLastDailyReset());
                 ps.setLong(14, data.getEconomyData().getLastDailyPizzo());
 
-                // Note: Not saving custom_currencies JSON manually here to save space, assuming
-                // simple serialization logic normally
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
@@ -116,13 +112,13 @@ public class PlayerRepositoryImpl implements PlayerRepository {
 
     @Override
     public CompletableFuture<Set<PlayerData>> findAll() {
-        // Warning: This could be heavy
+
         return db.executeQuery("SELECT * FROM players", ps -> {
         }, rs -> {
             Set<PlayerData> set = new HashSet<>();
             try {
                 while (rs.next()) {
-                    // Simplified map for brevity, ideally reuse matching logic
+
                     set.add(new PlayerData(UUID.fromString(rs.getString("uuid")), rs.getString("name")));
                 }
             } catch (SQLException e) {

@@ -31,7 +31,7 @@ public class MafiaRepositoryImpl implements MafiaRepository {
                 ps.setString(2, data.getColor());
                 ps.setString(3, data.getBaseLocation());
                 ps.setDouble(4, data.getTotalXp());
-                // Members and kits JSON would go here
+
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }

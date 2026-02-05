@@ -17,28 +17,28 @@ public class TerritoryManager extends AbstractManager implements TerritoryServic
 
     @Override
     public void onEnable() {
-        // Load
+
     }
 
     @Override
     public void onDisable() {
-        // Save
+
     }
 
     @Override
     public void createTerritory(String name, String biome, double revenue) {
-        TerritoryData data = new TerritoryData(name, null, 0, 0, biome); // Simplify ctor
+        TerritoryData data = new TerritoryData(name, null, 0, 0, biome);
         territories.put(name.toLowerCase(), data);
     }
 
     @Override
     public void setOwner(TerritoryData territory, String mafiaName) {
-        // Logic
+
     }
 
     @Override
     public TerritoryData getTerritory(Chunk chunk) {
-        // Spatial hash lookup
+
         return null;
     }
 }

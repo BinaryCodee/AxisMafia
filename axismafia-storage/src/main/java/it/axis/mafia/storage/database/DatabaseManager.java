@@ -46,10 +46,9 @@ public class DatabaseManager {
     }
 
     private void initializeTables() {
-        // Run synchronously on startup
+
         try (Connection conn = getConnection(); Statement stmt = conn.createStatement()) {
 
-            // Players
             stmt.execute("CREATE TABLE IF NOT EXISTS players (" +
                     "uuid VARCHAR(36) PRIMARY KEY, " +
                     "name VARCHAR(16), " +
@@ -64,21 +63,19 @@ public class DatabaseManager {
                     "robbery_count INT, " +
                     "last_robbery_time BIGINT, " +
                     "last_daily_reset BIGINT, " +
-                    "economy_json TEXT, " + // Storing custom currencies as JSON for simplicity in SQLite
+                    "economy_json TEXT, " +
                     "last_daily_pizzo BIGINT" +
                     ")");
 
-            // Mafias
             stmt.execute("CREATE TABLE IF NOT EXISTS mafias (" +
                     "name VARCHAR(64) PRIMARY KEY, " +
                     "color VARCHAR(16), " +
-                    "base_location TEXT, " + // Serialized world,x,y,z,yaw,pitch
+                    "base_location TEXT, " +
                     "total_xp DOUBLE, " +
-                    "members_json TEXT, " + // UUID:Rank map
+                    "members_json TEXT, " +
                     "unlocked_kits_json TEXT" +
                     ")");
 
-            // Territories
             stmt.execute("CREATE TABLE IF NOT EXISTS territories (" +
                     "name VARCHAR(64) PRIMARY KEY, " +
                     "owner_mafia VARCHAR(64), " +
@@ -89,7 +86,6 @@ public class DatabaseManager {
                     "center_x DOUBLE, center_y DOUBLE, center_z DOUBLE" +
                     ")");
 
-            // Horses
             stmt.execute("CREATE TABLE IF NOT EXISTS horses (" +
                     "owner_uuid VARCHAR(36) PRIMARY KEY, " +
                     "mafia_name VARCHAR(64), " +
@@ -100,7 +96,6 @@ public class DatabaseManager {
                     "level INT" +
                     ")");
 
-            // Bounties
             stmt.execute("CREATE TABLE IF NOT EXISTS bounties (" +
                     "target_uuid VARCHAR(36) PRIMARY KEY, " +
                     "setter_uuid VARCHAR(36), " +

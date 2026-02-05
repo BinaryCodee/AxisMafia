@@ -13,8 +13,6 @@ public class StoragePlugin extends JavaPlugin {
     private MafiaRepositoryImpl mafiaRepository;
     private TerritoryRepositoryImpl territoryRepository;
 
-    // Static access for simplicity in this comprehensive prompt,
-    // ideally use Dependency Injection.
     private static StoragePlugin instance;
 
     @Override
