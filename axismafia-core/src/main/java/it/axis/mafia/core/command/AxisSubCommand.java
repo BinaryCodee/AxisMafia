@@ -1,0 +1,21 @@
+package it.axis.mafia.core.command;
+
+import org.bukkit.command.CommandSender;
+import java.util.Collections;
+import java.util.List;
+
+public abstract class AxisSubCommand {
+    public abstract String getName();
+
+    public abstract String getPermission();
+
+    public abstract void execute(CommandSender sender, String[] args);
+
+    public List<String> getAliases() {
+        return Collections.emptyList();
+    }
+
+    public List<String> tabComplete(CommandSender sender, String[] args) {
+        return Collections.emptyList();
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/axismafia-api/axismafia-api.iml" filepath="$PROJECT_DIR$/axismafia-api/axismafia-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-bounty/axismafia-bounty.iml" filepath="$PROJECT_DIR$/axismafia-bounty/axismafia-bounty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-combat/axismafia-combat.iml" filepath="$PROJECT_DIR$/axismafia-combat/axismafia-combat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-core/axismafia-core.iml" filepath="$PROJECT_DIR$/axismafia-core/axismafia-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-drugs/axismafia-drugs.iml" filepath="$PROJECT_DIR$/axismafia-drugs/axismafia-drugs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-economy/axismafia-economy.iml" filepath="$PROJECT_DIR$/axismafia-economy/axismafia-economy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-gui/axismafia-gui.iml" filepath="$PROJECT_DIR$/axismafia-gui/axismafia-gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-horses/axismafia-horses.iml" filepath="$PROJECT_DIR$/axismafia-horses/axismafia-horses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-mafia/axismafia-mafia.iml" filepath="$PROJECT_DIR$/axismafia-mafia/axismafia-mafia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-plugin/axismafia-plugin.iml" filepath="$PROJECT_DIR$/axismafia-plugin/axismafia-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-reputation/axismafia-reputation.iml" filepath="$PROJECT_DIR$/axismafia-reputation/axismafia-reputation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-scoreboard/axismafia-scoreboard.iml" filepath="$PROJECT_DIR$/axismafia-scoreboard/axismafia-scoreboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-shop/axismafia-shop.iml" filepath="$PROJECT_DIR$/axismafia-shop/axismafia-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-social/axismafia-social.iml" filepath="$PROJECT_DIR$/axismafia-social/axismafia-social.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-stafftools/axismafia-stafftools.iml" filepath="$PROJECT_DIR$/axismafia-stafftools/axismafia-stafftools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-storage/axismafia-storage.iml" filepath="$PROJECT_DIR$/axismafia-storage/axismafia-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-territories/axismafia-territories.iml" filepath="$PROJECT_DIR$/axismafia-territories/axismafia-territories.iml" />
+      <module fileurl="file://$PROJECT_DIR$/axismafia-utils/axismafia-utils.iml" filepath="$PROJECT_DIR$/axismafia-utils/axismafia-utils.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,10 @@
+name: AxisMafia-Plugin
+version: 1.0.0
+main: it.axis.mafia.plugin.AxisMafiaPlugin
+api-version: 1.21
+description: Main loader for AxisMafia
+
+permissions:
+  axismafia.admin:
+    description: Admin permissions
+    default: op

@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>it.axis.mafia</groupId>
+        <artifactId>axismafia-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>axismafia-plugin</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>it.axis.mafia</groupId>
+            <artifactId>axismafia-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>it.axis.mafia</groupId>
+            <artifactId>axismafia-mafia</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>it.axis.mafia</groupId>
+            <artifactId>axismafia-economy</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>it.axis.mafia</groupId>
+            <artifactId>axismafia-territories</artifactId>
+        </dependency>
+        <!-- Add other modules as dependencies here -->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <minimizeJar>false</minimizeJar>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

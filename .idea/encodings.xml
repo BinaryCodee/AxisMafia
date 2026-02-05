@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/axismafia-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-bounty/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-bounty/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-combat/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-combat/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-drugs/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-drugs/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-economy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-economy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-gui/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-gui/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-horses/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-horses/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-mafia/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-mafia/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-plugin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-plugin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-reputation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-reputation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-scoreboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-scoreboard/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-shop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-shop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-social/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-social/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-stafftools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-stafftools/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-storage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-storage/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-territories/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-territories/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axismafia-utils/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

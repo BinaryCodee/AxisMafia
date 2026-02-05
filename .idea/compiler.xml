@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="axismafia-combat" />
+        <module name="axismafia-bounty" />
+        <module name="axismafia-shop" />
+        <module name="axismafia-utils" />
+        <module name="axismafia-mafia" />
+        <module name="axismafia-territories" />
+        <module name="axismafia-plugin" />
+        <module name="axismafia-social" />
+        <module name="axismafia-api" />
+        <module name="axismafia-core" />
+        <module name="axismafia-economy" />
+        <module name="axismafia-gui" />
+        <module name="axismafia-drugs" />
+        <module name="axismafia-scoreboard" />
+        <module name="axismafia-stafftools" />
+        <module name="axismafia-horses" />
+        <module name="axismafia-reputation" />
+        <module name="axismafia-storage" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
